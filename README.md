@@ -1,6 +1,3 @@
-# LANDKIT #
-
-Landkit Theme by Good Themes.
 
 ### Documentation ###
 
