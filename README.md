@@ -14,6 +14,7 @@ The steps to compile and get started with development are covered in detail in d
 - npm install
 - gulp
 
+<!---
 ### Design Files ###
 
 We provide an "unofficial" Landkit Figma file for you to play with. Learn more about it at http://landkit.goodthemes.co/docs/figma.html and view/download it here: https://www.figma.com/file/17Z7uFvKhSLYMcUA0TMjBu/LandKit-Distributed?node-id=2016%3A15971.
@@ -21,3 +22,4 @@ We provide an "unofficial" Landkit Figma file for you to play with. Learn more a
 ### Support ###
 
 Good Themes is happy to provide support for issues. Shoot us an email at support@goodthemes.co and we'll get you squared away.
+-->
