@@ -12321,9 +12321,12 @@ body.compensate-for-scrollbar {
     right: 0; } }
 
 .marca {
-  color: black;
+  color: #506690;
   font-family: RobotoCondensed-Bold, Roboto Condensed;
   font-weight: 700; }
+
+.marca:focus, .marca:hover {
+  color: #6610f2; }
 
 /*
 .navbar-light .navbar-nav .nav-link {

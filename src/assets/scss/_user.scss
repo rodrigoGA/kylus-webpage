@@ -5,12 +5,18 @@
 
 .marca{
 	//font-size:24px;
-	color: black;
+	//color: black;
+	    color: #506690;
 	font-family:RobotoCondensed-Bold, Roboto Condensed;
 	font-weight:700;
 
 
 }
+
+.marca:focus, .marca:hover {
+    color: $primary;
+}
+
 /*
 .navbar-light .navbar-nav .nav-link {
 	color: $gray-800;
