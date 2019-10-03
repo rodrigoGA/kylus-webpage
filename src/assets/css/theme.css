@@ -12320,10 +12320,19 @@ body.compensate-for-scrollbar {
   .sidenav-right {
     right: 0; } }
 
+.marca {
+  color: #506690;
+  font-family: RobotoCondensed-Bold, Roboto Condensed;
+  font-weight: 700; }
+
+.marca:focus, .marca:hover {
+  color: #6610f2; }
+
 /*
 .navbar-light .navbar-nav .nav-link {
 	color: $gray-800;
 }
+
 */
 /* Add the below transitions to allow a smooth color change similar to lyft */
 /*.navbar-fixed-on-scroll {
