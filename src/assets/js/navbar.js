@@ -22,8 +22,8 @@
 
   function makeNavbarLight() {
     if (!isLight && isTogglable) {
-      navbar.classList.remove('navbar-dark');
-      navbar.classList.add('navbar-light');
+      //navbar.classList.remove('navbar-dark');
+      //navbar.classList.add('navbar-light');
       navbar.classList.add('bg-white');
       navbar.classList.add('border-bottom');
 
@@ -33,10 +33,10 @@
   
   function makeNavbarDark() {
     if (isLight && isTogglable) {
-      navbar.classList.remove('navbar-light');
+      //navbar.classList.remove('navbar-light');
       navbar.classList.remove('bg-white');
       navbar.classList.remove('border-bottom');
-      navbar.classList.add('navbar-dark');
+      //navbar.classList.add('navbar-dark');
 
       repaintNav();
 
