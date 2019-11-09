@@ -27,6 +27,13 @@
       navbar.classList.add('bg-white');
       navbar.classList.add('border-bottom');
 
+      if (navbar.classList.contains('cambiar-color') ){
+        navbar.classList.add('navbar-light');
+        navbar.classList.remove('navbar-dark');
+      }  
+
+     
+
       isLight = true;
     }
   }
@@ -37,7 +44,12 @@
       navbar.classList.remove('bg-white');
       navbar.classList.remove('border-bottom');
       //navbar.classList.add('navbar-dark');
-
+     
+      if (navbar.classList.contains('cambiar-color') ){
+        navbar.classList.add('navbar-dark');
+        navbar.classList.remove('navbar-light');
+      } 
+      
       repaintNav();
 
       isLight = false;

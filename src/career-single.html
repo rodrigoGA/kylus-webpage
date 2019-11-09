@@ -7,6 +7,7 @@
   </head>
   <body class="bg-light">
 
+
     <!-- MODALS
     ================================================== -->
     @@include("partials/modals.html")
@@ -14,8 +15,8 @@
     <!-- NAVBAR
     ================================================== -->
     @@include("partials/navbar.html", {
-      "classList": "navbar-light bg-white border-bottom",
-      "type": "fluid"
+      "classList": "navbar-light bg-white fixed-top border-bottom",
+      "type": "boxed"
     })
 
     <!-- CONTENT
@@ -26,7 +27,7 @@
           <div class="col-12 col-md">
             
             <!-- Link -->
-            <a href="#!" class="font-weight-bold font-size-sm text-decoration-none mb-3">
+            <a href="@@webRoot/careers.html"  class="font-weight-bold font-size-sm text-decoration-none mb-3">
               <i class="fe fe-arrow-left mr-3"></i> All listings
             </a>
 
@@ -287,22 +288,7 @@
                     </div>
                   </div> <!-- / .row -->
                   <div class="row">
-                    <div class="col-12 col-md-6">
-                      
-                      <div class="form-group mb-5">
-                        <p class="mb-2">
-                          Cover letter
-                        </p>
-                        <div class="custom-file">
-                          <input type="file" class="custom-file-input" id="applyCover">
-                          <label class="custom-file-label" for="applyCover">
-                            Choose file
-                          </label>
-                        </div>
-                      </div>
-
-                    </div>
-                    <div class="col-12 col-md-6">
+                    <div class="col-12">
                       
                       <div class="form-group mb-5">
                         <p class="mb-2">
