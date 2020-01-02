@@ -2,6 +2,11 @@
 // user.scss
 // Use this to write your custom SCSS
 //
+.navbar-brand-img {
+    max-height: 3.4rem;
+    position: fixed;
+    top: 0.8rem;
+}
 
 .marca{
 	//font-size:24px;
@@ -16,6 +21,23 @@
 .marca:focus, .marca:hover {
     color: $primary;
 }
+
+.divider-curves2:not(:first-child) {
+    top: 1px;
+}
+.divider-curves2 {
+    position: relative;
+}
+
+
+.section-fullscreen{
+
+    min-height: 100vh;
+    margin-top: -5rem !important;
+    display: flex;
+    align-items: center;
+}
+
 
 /*
 .navbar-light .navbar-nav .nav-link {

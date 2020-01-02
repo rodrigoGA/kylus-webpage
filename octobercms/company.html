@@ -1,0 +1,152 @@
+<!-- NAVBAR
+================================================== -->
+{% partial 'site/navbar' classList="navbar-light bg-white fixed-top border-bottom" type="boxed" %}
+
+<!-- WELCOME
+================================================== -->
+<section class="py-8 py-md-11">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-12 col-md-10 col-lg-8 text-center">
+        
+        <!-- Headin -->
+        <h1 class="display-2 font-weight-bold" >
+         {{ 'company-titulo1' |_ }} 
+
+        </h1>
+
+        <!-- Text -->
+        <p class="lead text-muted mb-7 mb-md-9">
+          {{ 'company-titulo1_desc' |_ }}
+        </p>
+
+      </div>
+    </div> <!-- / .row -->
+    <div class="row">
+      <div class="col-12">
+        
+        <!-- Image -->
+        <div class="form-row">
+          <div class="col-4">
+            
+            <img src="{{('assets/img/photos/photo-16.jpg')|theme }}"  class="img-fluid rounded shadow-lg" alt="...">
+
+          </div>
+          <div class="col-3">
+
+            <img src="{{('assets/img/photos/photo-17.jpg')|theme }}" class="img-fluid rounded shadow-lg mb-4" alt="...">
+
+            <img src="{{('assets/img/photos/photo-18.jpg')|theme }}" class="img-fluid rounded shadow-lg mt-1" alt="...">
+
+          </div>
+          <div class="col-5">
+
+            <div class="form-row mb-4">
+              <div class="col-5">
+                
+                <img src="{{('assets/img/photos/photo-19.jpg')|theme }}" class="img-fluid rounded shadow-lg" alt="...">
+
+              </div>
+              <div class="col-7">
+                
+                <img src="{{('assets/img/photos/photo-20.jpg')|theme }}" class="img-fluid rounded shadow-lg" alt="...">
+
+              </div>
+            </div> <!-- / .row -->
+
+            <img src="{{('assets/img/photos/photo-21.jpg')|theme }}" class="img-fluid rounded shadow-lg mt-1" alt="...">
+
+          </div>
+        </div>
+
+      </div>
+    </div> <!-- / .row -->
+  </div> <!-- / .container -->
+</section>
+
+
+
+
+<!-- LOCATION
+================================================== -->
+<section class="pt-8 pt-md-0 border-bottom bg-light">
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-12 col-md-6">
+
+        <!-- Map (mobile) -->
+        <div class="embed-responsive embed-responsive-1by1 d-md-none">
+          <div class="embed-responsive-item" data-toggle="map" data-options='{"center": [-56.1963665 , -34.9049736], "zoom": 12}'></div>
+        </div>
+        
+        <!-- Map -->
+        <div class="position-relative h-100 vw-50 float-right d-none d-md-block">
+
+          <!-- Map -->
+          <div class="h-100 w-100" data-toggle="map" data-options='{"center": [-56.1963665 , -34.9049736], "zoom": 14}'></div>
+          
+          <!-- Shape -->
+          <div class="shape shape-right shape-fluid-y svg-shim text-light">
+          	 {% partial 'snippets/theme-include' src="assets/img/shapes/angles/angle-right.svg"  %}
+          </div>
+
+        </div>
+
+      </div>
+      <div class="col-12 col-md-6 col-lg-4 offset-lg-1 py-8 py-md-11 py-lg-12">
+        
+        {% set  texto1 = 'company-montevideo-sub-texto1' |_ %}
+        {% set  texto2 = 'company-montevideo-sub-texto2' |_ %}
+        {% set  texto3 = 'company-montevideo-sub-texto3' |_ %}
+
+        <!-- Heading -->
+        <h2 class="font-weight-bold">          
+          {{ 'company-montevideo-titulo' |_ }}<br>
+          <span class="text-primary">{{ 'company-montevideo-sub' |_ }}  <span data-toggle="typed" data-options='{"strings": ["{{texto1}}", "{{texto2}}", "{{texto3}}"]}'></span></span>
+        </h2>
+
+        <!-- Text -->
+        <p class="font-size-lg text-gray-700">
+          {{ 'company-montevideo-contenido' |_ }}
+        </p>
+
+      </div>
+    </div> <!-- / .row -->
+  </div> <!-- / .container -->
+</section>
+
+
+
+
+<!-- ABOUT
+================================================== -->
+<section class="py-8 py-md-11">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-12 col-md-10 col-lg-7 ">
+        
+        <!-- Heading -->
+        <h2 class="font-weight-bold text-center">
+          {{ 'company-acercadenosotoros' |_ }}
+        </h2>
+
+        <!-- Text -->
+        <p class="font-size-lg text-muted mb-7 mb-md-9">
+          {{ 'company-acercadenosotoros-contenido' |_ }}
+
+        </p>
+
+      </div>
+    </div> 
+
+      
+    </div> <!-- / .row -->
+  </div> <!-- / .container -->
+</section>
+
+
+
+<!-- FOOTER
+================================================== -->
+{% partial 'site/footer' classList="bg-dark  border-gray-800-50" %}
+
