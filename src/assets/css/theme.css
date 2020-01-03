@@ -12324,9 +12324,9 @@ body.compensate-for-scrollbar {
     right: 0; } }
 
 .navbar-brand-img {
-  max-height: 3.4rem;
+  max-height: 4rem;
   position: fixed;
-  top: 0.8rem; }
+  top: 0.6rem; }
 
 .marca {
   color: #506690;
