@@ -12,6 +12,7 @@
   //
 
   var navbar = document.querySelector('.navbar');
+  var imgLogo = document.querySelector('.navbar-brand-img');
   var isLight = false;
   var isTogglable = navbar ? navbar.classList.contains('navbar-togglable') : false;
 
@@ -29,6 +30,7 @@
 
       if (navbar.classList.contains('cambiar-color') ){
         navbar.classList.add('navbar-light');
+        imgLogo.src = imgLogo.src.replace("brand-negro-transparente2.svg", "brand-blanco-transparente2.svg");
         navbar.classList.remove('navbar-dark');
       }  
 
@@ -47,6 +49,7 @@
      
       if (navbar.classList.contains('cambiar-color') ){
         navbar.classList.add('navbar-dark');
+        imgLogo.src = imgLogo.src.replace("brand-blanco-transparente2.svg", "brand-negro-transparente2.svg");
         navbar.classList.remove('navbar-light');
       } 
       
@@ -86,6 +89,7 @@
         toggleNavbar(type);
       });
     });
+    makeNavbarLight();
   }
 
 })();

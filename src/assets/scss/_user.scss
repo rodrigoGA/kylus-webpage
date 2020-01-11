@@ -2,6 +2,10 @@
 // user.scss
 // Use this to write your custom SCSS
 //
+.navbar-dark .navbar-brand {
+  filter: none;
+}
+
 .navbar-brand-img {
     max-height: 4rem;
     position: fixed;
