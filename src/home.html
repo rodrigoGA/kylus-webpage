@@ -5,7 +5,7 @@
       "pageTitle": "Terminus·Labs"
     })
   </head>
-  <body class="pt-10">
+  <body class="">
 
     <!-- MODALS
     ================================================== -->
@@ -14,7 +14,7 @@
     <!-- NAVBAR
     ================================================== -->
     @@include("partials/navbar.html", {
-      "classList": "navbar-light bg-white fixed-top border-bottom",
+      "classList": "navbar-dark navbar-togglable fixed-top cambiar-color",
       "type": "boxed"
     })
 
@@ -22,53 +22,108 @@
 
 <!-- WELCOME 1 
 ================================================== -->
-<section class="py-8  py-md-9  py-lg-12 bg-light">
+<!--<section class="py-8  py-md-9  py-lg-12 bg-light border-bottom">
   <div class="container">
     <div class="row align-items-center">
       <div class="col-12 col-md-5 col-lg-6 order-md-2">
         
-        <!-- Image -->
-                <img src="assets/img/illustrations/001_d2.png" class="img-fluid mw-md-150 mw-lg-130 mb-6 mb-md-0" alt="..." data-aos="fade-up" data-aos-delay="100">
+        <!~~ Image ~~>
+        <img src="assets/img/illustrations/001_d2.png" class="img-fluid mw-md-150 mw-lg-130 mb-6 mb-md-0" alt="..." data-aos="fade-up" data-aos-delay="100">
 
       </div>
       <div class="col-12 col-md-7 col-lg-6 order-md-1" data-aos="fade-up">
         
-        <!-- Heading -->
+        <!~~ Heading ~~>
         <h1 class="display-3 text-center text-md-left font-weight-bold">
                  Su socio de IT confiable
         </h1>
 
-        <!-- Text -->
+        <!~~ Text ~~>
         <p class="lead text-center text-md-left text-muted mb-6 mb-lg-8">
                    Desarrollo ade software a medida enfocado en la calidad de los productos
 
 
         </p>
             
-        <!-- Buttons -->
+        <!~~ Buttons ~~>
         <div class="text-center text-md-left">
-          <!--<a href="overview.html" class="btn btn-primary shadow lift mr-1">
+          <!~~<a href="overview.html" class="btn btn-primary shadow lift mr-1">
             View all pages <i class="fe fe-arrow-right d-none d-md-inline ml-3"></i>
-          </a>-->
+          </a>~~>
           <a href="contact.html" class="btn btn-primary lift">
                     LET'S TALK <i class="fe fe-arrow-right d-none d-md-inline ml-3"></i>
           </a>
         </div>
 
       </div>
-    </div> <!-- / .row -->
-  </div> <!-- / .container -->
+    </div> <!~~ / .row ~~>
+  </div> <!~~ / .container ~~>
 </section>
 
+-->
+ <!-- WELCOME 1 degradee
+    ================================================== -->
+    <section class=" position-relative" >
+      <div id="stripes" aria-hidden="true" >
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
 
+      <div class="container  pt-10 py-8" >
+        <div class="row align-items-center py-8  py-md-9  py-lg-12">
+          <div class="col-12 col-md-5 col-lg-6 order-md-2 d-none d-sm-block">
+            
+            <!-- Image -->
+            <img src="assets/img/illustrations/001_d2.png" class="img-fluid mw-md-150 mw-lg-130 mb-6 mb-md-0" alt="..." data-aos="fade-up" data-aos-delay="100">
+
+          </div>
+          <div class="col-12 col-md-7 col-lg-6 order-md-1 pt-12 pt-sm-0" data-aos="fade-up">
+            
+            <!-- Heading -->
+            <h1 class="display-1 text-center text-md-left font-weight-bold text-white" >
+             Su socio de IT confiable
+            </h1>
+
+            <!-- Text -->
+            <p class="lead text-center text-md-left  mb-6 mb-lg-8 text-white">
+               provides turn-key software development services that add value to your business. Contact us today and transform your ideas into solutions!
+            </p>
+                
+            <!-- Buttons -->
+            <div class="text-center text-md-left">
+              <!-- <a href="overview.html" class="btn btn-secondary shadow lift mr-1">
+                View all pages <i class="fe fe-arrow-right d-none d-md-inline ml-3"></i>
+              </a> -->
+              <a href="contact.html" class="btn btn-light  lift">
+                LET'S TALK <i class="fe fe-arrow-right d-none d-md-inline ml-3"></i>
+              </a>
+            </div>
+
+          </div>
+        </div> <!-- / .row -->
+      </div> <!-- / .container -->
+
+    </section>
 
 
     <!-- WELCOME 1 full screen
     ================================================== -->
-<!--    <section class="py-8  bg-light  section-fullscreen">
-      <div class="container">
+    <!--<section class="py-8  section-fullscreen  section-rotate bg-section-secondary">
+      <div aria-hidden="true"class="section-inner bg-gradient-terminus">
+      </div>
+
+      <div class="bg-absolute-cover bg-size--contain d-flex align-items-center" >
+        <figure class="w-100 d-none d-lg-block">
+         @@include("assets/img/illustrations/bg-circulos.svg")
+         </figure>
+      </div>
+      
+      <div class="container"  style="z-index: 100">
         <div class="row align-items-center">
-          <div class="col-12 col-md-5 col-lg-6 order-md-2 d-none d-sm-block">
+          <div class="col-12 col-md-5 col-lg-6 order-md-2 d-sm-block">
             
             <!~~ Image ~~>
             <img src="assets/img/illustrations/001_d2.png" class="img-fluid mw-md-150 mw-lg-130 mb-6 mb-md-0" alt="..." data-aos="fade-up" data-aos-delay="100">
@@ -77,12 +132,12 @@
           <div class="col-12 col-md-7 col-lg-6 order-md-1 pt-12 pt-sm-0" data-aos="fade-up">
             
             <!~~ Heading ~~>
-            <h1 class="display-1 text-center text-md-left font-weight-bold">
+            <h1 class="display-1 text-center text-md-left font-weight-bold text-white" >
              Su socio de IT confiable
             </h1>
 
             <!~~ Text ~~>
-            <p class="lead text-center text-md-left text-muted mb-6 mb-lg-8">
+            <p class="lead text-center text-md-left  mb-6 mb-lg-8 text-white">
                provides turn-key software development services that add value to your business. Contact us today and transform your ideas into solutions!
             </p>
                 
@@ -91,7 +146,7 @@
               <!~~ <a href="overview.html" class="btn btn-secondary shadow lift mr-1">
                 View all pages <i class="fe fe-arrow-right d-none d-md-inline ml-3"></i>
               </a> ~~>
-              <a href="contact.html" class="btn btn-primary lift">
+              <a href="contact.html" class="btn btn-light  lift">
                 LET'S TALK <i class="fe fe-arrow-right d-none d-md-inline ml-3"></i>
               </a>
             </div>
@@ -99,11 +154,13 @@
           </div>
         </div> <!~~ / .row ~~>
       </div> <!~~ / .container ~~>
+
+
     </section>-->
 
-   <!-- WELCOME -2
-    ================================================== -->
-<!--    <section class="pt-8 pb-11 pt-md-9 pb-md-12 py-lg-14 bg-light bg-between" style="background-image: url(assets/img/illustrations/001_a.png), url(assets/img/illustrations/001_c.png);">
+<!--   <!~~ WELCOME -2
+    ================================================== ~~>
+    <section class="pt-8 pb-11 pt-md-9 pb-md-12 py-lg-14 bg-light bg-between" style="background-image: url(assets/img/illustrations/001_a.png), url(assets/img/illustrations/001_c.png);">
       <div class="container">
         <div class="row justify-content-center">
           <div class="col-12 col-md-10 col-lg-7 text-center" data-aos="fade-up">
@@ -114,7 +171,7 @@
             <!~~ Heading ~~>
             <h1 class="display-2 font-weight-bold">
               Welcome to <span class="text-primary">Terminus·Labs</span>. <br>
-              Develop anything.
+              Su socio de IT confiable
             </h1>
 
             <!~~ Text ~~>
@@ -136,8 +193,8 @@
           </div>
         </div> <!~~ / .row ~~>
       </div> <!~~ / .container ~~>
-    </section>
--->
+    </section>-->
+
 
 
 
@@ -148,10 +205,10 @@
 
  <!-- SERVICES
     ================================================== -->
-    <section class="py-8  py-md-9  py-lg-12  border-bottom">
+    <section class="pb-8  pb-md-9  pb-lg-12 pt-md-1  pt-lg-4  border-bottom">
       <div class="container ">
         <div class="row justify-content-center">
-          <div class="col-12 col-md-10 col-lg-10 text-center mb-7 mb-md-9" data-aos="fade-up">
+          <div class="col-12 col-md-10 col-lg-10 text-center mb-7 mb-md-9" >
             
             <!-- Badge -->
 <!--            <span class="badge badge-pill badge-primary-soft mb-3">
@@ -159,12 +216,12 @@
             </span>-->
 
             <!-- Heading -->
-            <h2 class="font-weight-bold">
+            <h2 class="font-weight-bold" data-aos="fade-up">
               Custom software development
             </h2>
 
             <!-- Text -->
-            <p class="font-size-lg text-gray-700 ">
+            <p class="font-size-lg text-gray-700 " data-aos="fade-up">
               Map a strategy, build a solution or elevate your product experience with focused engagements available as standalone offerings or as a part of your project’s service stack.
             </p>
 <!--

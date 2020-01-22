@@ -12,7 +12,6 @@
   var map = document.querySelectorAll('[data-toggle="map"]');
   var accessToken = 'pk.eyJ1Ijoicm9nb2FiIiwiYSI6ImNqeXN6ZW9udjAxZHgzaXFkOHYwY3ppNHQifQ.9fjP6w3zWYDVvAwc36eYbg';
 
-
   //
   // Methods
   //

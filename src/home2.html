@@ -1,0 +1,837 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    @@include("partials/head.html", {
+      "pageTitle": "Terminus·Labs"
+    })
+  </head>
+  <body class="pt-10">
+
+    <!-- MODALS
+    ================================================== -->
+    @@include("partials/modals.html")
+    
+    <!-- NAVBAR
+    ================================================== -->
+    @@include("partials/navbar.html", {
+      "classList": "navbar-dark navbar-togglable fixed-top cambiar-color",
+      "type": "boxed"
+    })
+
+
+
+<!-- WELCOME 1 
+================================================== -->
+<!--<section class="py-8  py-md-9  py-lg-12 bg-light border-bottom">
+  <div class="container">
+    <div class="row align-items-center">
+      <div class="col-12 col-md-5 col-lg-6 order-md-2">
+        
+        <!~~ Image ~~>
+        <img src="assets/img/illustrations/001_d2.png" class="img-fluid mw-md-150 mw-lg-130 mb-6 mb-md-0" alt="..." data-aos="fade-up" data-aos-delay="100">
+
+      </div>
+      <div class="col-12 col-md-7 col-lg-6 order-md-1" data-aos="fade-up">
+        
+        <!~~ Heading ~~>
+        <h1 class="display-3 text-center text-md-left font-weight-bold">
+                 Su socio de IT confiable
+        </h1>
+
+        <!~~ Text ~~>
+        <p class="lead text-center text-md-left text-muted mb-6 mb-lg-8">
+                   Desarrollo ade software a medida enfocado en la calidad de los productos
+
+
+        </p>
+            
+        <!~~ Buttons ~~>
+        <div class="text-center text-md-left">
+          <!~~<a href="overview.html" class="btn btn-primary shadow lift mr-1">
+            View all pages <i class="fe fe-arrow-right d-none d-md-inline ml-3"></i>
+          </a>~~>
+          <a href="contact.html" class="btn btn-primary lift">
+                    LET'S TALK <i class="fe fe-arrow-right d-none d-md-inline ml-3"></i>
+          </a>
+        </div>
+
+      </div>
+    </div> <!~~ / .row ~~>
+  </div> <!~~ / .container ~~>
+</section>
+
+-->
+ <!-- WELCOME 1 degradee
+    ================================================== -->
+    <!--<section class=" position-relative" >
+      <div id="stripes" aria-hidden="true" >
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+
+      <div class="container  pt-10 py-8" >
+        <div class="row align-items-center py-8  py-md-9  py-lg-12">
+          <div class="col-12 col-md-5 col-lg-6 order-md-2 d-none d-sm-block">
+            
+            <!~~ Image ~~>
+            <img src="assets/img/illustrations/001_d2.png" class="img-fluid mw-md-150 mw-lg-130 mb-6 mb-md-0" alt="..." data-aos="fade-up" data-aos-delay="100">
+
+          </div>
+          <div class="col-12 col-md-7 col-lg-6 order-md-1 pt-12 pt-sm-0" data-aos="fade-up">
+            
+            <!~~ Heading ~~>
+            <h1 class="display-1 text-center text-md-left font-weight-bold text-white" >
+             Su socio de IT confiable
+            </h1>
+
+            <!~~ Text ~~>
+            <p class="lead text-center text-md-left  mb-6 mb-lg-8 text-white">
+               provides turn-key software development services that add value to your business. Contact us today and transform your ideas into solutions!
+            </p>
+                
+            <!~~ Buttons ~~>
+            <div class="text-center text-md-left">
+              <!~~ <a href="overview.html" class="btn btn-secondary shadow lift mr-1">
+                View all pages <i class="fe fe-arrow-right d-none d-md-inline ml-3"></i>
+              </a> ~~>
+              <a href="contact.html" class="btn btn-light  lift">
+                LET'S TALK <i class="fe fe-arrow-right d-none d-md-inline ml-3"></i>
+              </a>
+            </div>
+
+          </div>
+        </div> <!~~ / .row ~~>
+      </div> <!~~ / .container ~~>
+
+    </section>-->
+
+
+    <!-- WELCOME 1 full screen
+    ================================================== -->
+    <section class="py-8  py-md-9  py-lg-12    section-fullscreen  section-rotate bg-section-secondary">
+      <div aria-hidden="true"class="section-inner bg-gradient-terminus">
+      </div>
+
+      <div class="bg-absolute-cover bg-size--contain d-flex align-items-center" >
+        <figure class="w-100 d-none d-lg-block">
+         @@include("assets/img/illustrations/bg-circulos.svg")
+         </figure>
+      </div>
+      
+      <div class="container"  style="z-index: 100">
+        <div class="row align-items-center">
+          <div class="col-12 col-md-5 col-lg-6 order-md-2 d-sm-block">
+            
+            <!-- Image -->
+            <img src="assets/img/illustrations/001_d2.png" class="img-fluid mw-md-150 mw-lg-130 mb-6 mb-md-0" alt="..." data-aos="fade-up" data-aos-delay="100">
+
+          </div>
+          <div class="col-12 col-md-7 col-lg-6 order-md-1 pt-12 pt-sm-0" data-aos="fade-up">
+            
+            <!-- Heading -->
+            <h1 class="display-1 text-center text-md-left font-weight-bold text-white" >
+             Su socio de IT confiable
+            </h1>
+
+            <!-- Text -->
+            <p class="lead text-center text-md-left  mb-6 mb-lg-8 text-white">
+               provides turn-key software development services that add value to your business. Contact us today and transform your ideas into solutions!
+            </p>
+                
+            <!-- Buttons -->
+            <div class="text-center text-md-left">
+              <!-- <a href="overview.html" class="btn btn-secondary shadow lift mr-1">
+                View all pages <i class="fe fe-arrow-right d-none d-md-inline ml-3"></i>
+              </a> -->
+              <a href="contact.html" class="btn btn-light  lift">
+                LET'S TALK <i class="fe fe-arrow-right d-none d-md-inline ml-3"></i>
+              </a>
+            </div>
+
+          </div>
+        </div> <!-- / .row -->
+      </div> <!-- / .container -->
+
+
+    </section>
+
+<!--   <!~~ WELCOME -2
+    ================================================== ~~>
+    <section class="pt-8 pb-11 pt-md-9 pb-md-12 py-lg-14 bg-light bg-between" style="background-image: url(assets/img/illustrations/001_a.png), url(assets/img/illustrations/001_c.png);">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-12 col-md-10 col-lg-7 text-center" data-aos="fade-up">
+
+            <!~~ Image (mobile) ~~>
+            <img src="assets/img/illustrations/001_d2.png" alt="..." class="img-fluid mb-6 d-lg-none">
+            
+            <!~~ Heading ~~>
+            <h1 class="display-2 font-weight-bold">
+              Welcome to <span class="text-primary">Terminus·Labs</span>. <br>
+              Su socio de IT confiable
+            </h1>
+
+            <!~~ Text ~~>
+            <p class="font-size-lg text-muted mb-6 mb-md-8">
+              Forward thinking businesses use our cloud backup service to ensure data reliability and safety.
+            </p>
+
+            <a  href="@@webRoot/contact.html" class="btn btn-primary lift">
+                GET IN TOUCH
+            </a>
+            <!~~ Button ~~>
+            <!~~<a href="#!" class="btn btn-primary mr-1 lift">
+              Get started <i class="fe fe-arrow-right ml-3"></i>
+            </a>
+            <a href="#!" class="btn btn-primary-soft lift">
+              Learn more
+            </a>~~>
+
+          </div>
+        </div> <!~~ / .row ~~>
+      </div> <!~~ / .container ~~>
+    </section>-->
+
+
+
+
+
+
+
+
+
+ <!-- SERVICES
+    ================================================== -->
+    <section class="pb-8  pb-md-9  pb-lg-12 pt-md-1  pt-lg-4  border-bottom">
+      <div class="container ">
+        <div class="row justify-content-center">
+          <div class="col-12 col-md-10 col-lg-10 text-center mb-7 mb-md-9" >
+            
+            <!-- Badge -->
+<!--            <span class="badge badge-pill badge-primary-soft mb-3">
+              <span class="h6 text-uppercase">Services</span>
+            </span>-->
+
+            <!-- Heading -->
+            <h2 class="font-weight-bold" data-aos="fade-up">
+              Custom software development
+            </h2>
+
+            <!-- Text -->
+            <p class="font-size-lg text-gray-700 " data-aos="fade-up">
+              Map a strategy, build a solution or elevate your product experience with focused engagements available as standalone offerings or as a part of your project’s service stack.
+            </p>
+<!--
+              <a  href="@@webRoot/services.html" class="btn btn-primary-soft btn-sm lift ">
+                READ MORE
+              </a>-->
+
+          </div>
+<!--                      <!~~ List ~~>
+            <div class="row align-items-center" data-aos="fade-up" data-aos-delay="50">
+              <div class="col-12 col-lg-4">
+                
+                <!~~ Item ~~>
+                <div class="d-flex">
+
+                  <!~~ Check ~~>
+                  <div class="badge badge-rounded-circle badge-primary-soft mt-1 mr-4">
+                    <i class="fe fe-check"></i>
+                  </div>
+                  
+                  <!~~ Text ~~>
+                  <p>
+                    Mobile
+                  </p>
+
+                </div>
+
+                <!~~ Item ~~>
+                <div class="d-flex">
+
+                  <!~~ Check ~~>
+                  <div class="badge badge-rounded-circle badge-primary-soft mt-1 mr-4">
+                    <i class="fe fe-check"></i>
+                  </div>
+                  
+                  <p class="">
+                    Web development
+                  </p>
+
+                </div>
+
+              </div>
+              <div class="col-12 col-lg-4">
+
+                <!~~ Item ~~>
+                <div class="d-flex">
+
+                  <!~~ Check ~~>
+                  <span class="badge badge-rounded-circle badge-primary-soft mt-1 mr-4">
+                    <i class="fe fe-check"></i>
+                  </span>
+                  
+                  <!~~ Text ~~>
+                  <p>
+                    DevOps
+                  </p>
+
+                </div>
+
+                <!~~ Item ~~>
+                <div class="d-flex">
+
+                  <!~~ Check ~~>
+                  <div class="badge badge-rounded-circle badge-primary-soft mr-1 mr-4">
+                    <i class="fe fe-check"></i>
+                  </div>
+                  
+                  <!~~ Text ~~>
+                  <p class="">
+                    AI & Machine Learning
+                  </p>
+
+                </div>
+
+              </div>
+              <div class="col-12 col-lg-4">
+
+                <!~~ Item ~~>
+                <div class="d-flex">
+
+                  <!~~ Check ~~>
+                  <span class="badge badge-rounded-circle badge-primary-soft mt-1 mr-4">
+                    <i class="fe fe-check"></i>
+                  </span>
+                  
+                  <!~~ Text ~~>
+                  <p>
+                    Consulting
+                  </p>
+
+                </div>
+
+                <!~~ Item ~~>
+                <div class="d-flex">
+
+                  <!~~ Check ~~>
+                  <a class="btn btn-primary-soft btn-sm   lift " href="@@webRoot/services.html"> READ MORE</a>
+
+                </div>
+
+              </div>
+            </div> <!~~ / .row ~~>-->
+        </div> <!-- / .row -->
+
+        <div class="row pb-8">
+          <div class="col-12 col-md-4 text-center" data-aos="fade-up">
+            
+            <!-- Icon -->
+            <div class="icon text-primary mb-3">
+              @@include("assets/img/icons/duotone-icons/Devices/Android.svg")
+            </div>
+
+            <!-- Heading -->
+            <h3>
+              Mobile
+            </h3>
+
+            <!-- Text -->
+            <p class="text-muted mb-6 mb-md-0">
+              Aplicaciones móviles de calidad que aporten un verdadero valor agregado y se conviertan en piezas fundamentales para su negocio.
+            </p>
+
+          </div>
+          <div class="col-12 col-md-4 text-center" data-aos="fade-up" data-aos-delay="50">
+
+            <!-- Icon -->
+            <div class="icon text-primary mb-3">
+              @@include("assets/img/icons/duotone-icons/Devices/Laptop.svg")
+            </div>
+
+            <!-- Heading -->
+            <h3>
+              Web development
+            </h3>
+
+            <!-- Text -->
+            <p class="text-muted mb-6 mb-md-0">
+              Creación de aplicaciones modernas, preparadas para el futuro y enfocadas en su usabilidad. 
+            </p>
+
+          </div>
+          <div class="col-12 col-md-4 text-center" data-aos="fade-up" data-aos-delay="100">
+              
+            <!-- Icon -->
+            <div class="icon text-primary mb-3">
+              @@include("assets/img/icons/duotone-icons/General/Settings-1.svg")
+            </div>
+
+            <!-- Heading -->
+            <h3>
+              Inteligencia artificial y aprendizaje automático
+            </h3>
+
+            <!-- Text -->
+            <p class="text-muted mb-0">
+              Podemos impulsar su negocio con técnicas de inteligencia artificial para obtener resultados muy positivos
+            </p>
+
+          </div>
+        </div> <!-- / .row -->
+        <div class="row">
+          <div class="col-12 col-md-4 text-center" data-aos="fade-up">
+            
+            <!-- Icon -->
+            <div class="icon text-primary mb-3">
+              @@include("assets/img/icons/duotone-icons/Shopping/Chart-line#1.svg")
+            </div>
+
+            <!-- Heading -->
+            <h3>
+              Consultoría y asesoramiento
+            </h3>
+
+            <!-- Text -->
+            <p class="text-muted mb-6 mb-md-0">
+              Brindando una visión externa y objetiva acerca de los procesos de su empresa.
+              Nosotros lo aconsejamos, usted decide 
+            </p>
+
+          </div>
+          <div class="col-12 col-md-4 text-center" data-aos="fade-up" data-aos-delay="50">
+
+            <!-- Icon -->
+            <div class="icon text-primary mb-3">
+              @@include("assets/img/icons/duotone-icons/General/Shield-check.svg")
+            </div>
+
+            <!-- Heading -->
+            <h3>
+              QA y Seguridad
+            </h3>
+
+            <!-- Text -->
+            <p class="text-muted mb-6 mb-md-0">
+              Seguimos los estándares de calidad y seguridad en todas las etapas del desarrollo de software
+            </p>
+
+          </div>
+          <div class="col-12 col-md-4 text-center" data-aos="fade-up" data-aos-delay="100">
+              
+
+                       <!-- Icon -->
+            <div class="icon text-primary mb-3">
+              @@include("assets/img/icons/duotone-icons/Code/Thunder-circle.svg")
+            </div>
+
+            <!-- Heading -->
+            <h3>
+              DevOps
+            </h3>
+
+            <!-- Text -->
+            <p class="text-muted mb-6 mb-md-0">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent tempus eleifend justo, non molestie tortor fermentum eu. Vivamus id augue nec ex imperdiet rhoncus a sit amet turpis. 
+            </p>
+
+          </div>
+        </div> <!-- / .row -->
+        <div class="row">
+          <div class="col-12 text-center  mt-7 mt-md-9" data-aos="fade-up">            
+            <!-- Stats -->
+              <a  href="@@webRoot/services.html" class="btn btn-primary-soft btn-sm lift mb-7 mb-md-9">
+                READ MORE
+              </a>
+          </div>
+        </div>
+
+
+
+
+      </div> <!-- / .container -->
+    </section>
+
+
+
+
+
+    <!-- SHAPE
+    ================================================== 
+    <div class="position-relative mt-n8">
+      <div class="shape shape-bottom shape-fluid-x svg-shim text-gray-100">
+        @@include("assets/img/shapes/curves/curve-1.svg")
+      </div>
+    </div>-->
+        <div class="position-relative">
+      <div class="shape shape-bottom shape-fluid-x svg-shim text-dark">
+        @@include("assets/img/shapes/curves/curve-1.svg")
+      </div>
+    </div>
+
+    <!-- COMPANY
+    ================================================== -->
+    <section class="py-8  py-md-9  py-lg-12      pb-md-14 pb-lg-15 bg-dark  " >
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-12 col-md-5 col-lg-6 order-md-2">
+            
+            <!-- Image -->
+            <img src="assets/img/illustrations/003.png" alt="..." class="img-fluid mb-6 mb-md-0" data-aos="fade-up" data-aos-delay="100">
+
+          </div>
+          <div class="col-12 col-md-7 col-lg-6 order-md-1" data-aos="fade-up">
+            
+            <!-- Heading -->
+            <h2 class="font-weight-bold text-white" >
+              Stay focused on your business. <br>
+              <span class="text-secondary">Let us handle the problems</span>.
+            </h2>
+
+            <!-- Text -->
+            <p class="font-size-lg text-muted  mb-6 mb-md-6">
+              We think big, design smart and develop fast for all screens, projects and teams. Serving global leaders to entrepreneurs, we tailor our process based on your scale and structure.
+            </p>
+
+
+            <!-- List -->
+            <div class="row 0  mb-6 mb-md-6 text-white" >
+              <div class="col-12 col-lg-6">
+                
+                <!-- Item -->
+                <div class="d-flex ">
+
+                  <!-- Check -->
+                  <div class="badge badge-rounded-circle badge-secondary-soft mt-1 mr-4">
+                    <i class="fe fe-check"></i>
+                  </div>
+                  
+                  <!-- Text -->
+                  <p>
+                    Metodologias agiles
+                  </p>
+
+                </div>
+
+                <!-- Item -->
+                <div class="d-flex">
+
+                  <!-- Check -->
+                  <div class="badge badge-rounded-circle badge-secondary-soft mt-1 mr-4">
+                    <i class="fe fe-check"></i>
+                  </div>
+                  
+                  <p class="mb-lg-0">
+                    Inovación
+                  </p>
+
+                </div>
+
+              </div>
+              <div class="col-12 col-lg-6">
+
+                <!-- Item -->
+                <div class="d-flex">
+
+                  <!-- Check -->
+                  <span class="badge badge-rounded-circle badge-secondary-soft mt-1 mr-4">
+                    <i class="fe fe-check"></i>
+                  </span>
+                  
+                  <!-- Text -->
+                  <p>
+                    Equipos altamente capacitados
+                  </p>
+
+                </div>
+
+                <!-- Item -->
+                <div class="d-flex">
+
+                  <!-- Check -->
+                  <div class="badge badge-rounded-circle badge-secondary-soft mr-1 mr-4">
+                    <i class="fe fe-check"></i>
+                  </div>
+                  
+                  <!-- Text -->
+                  <p class="mb-0">
+                    transparenica, cofniaza, calidad, rapido..?
+                  </p>
+
+                </div>
+
+              </div>
+            </div> <!-- / .row -->
+            <!-- Stats -->
+              <a  href="@@webRoot/company.html" class="btn btn-secondary-soft btn-sm lift">
+                READ MORE
+              </a>
+
+          </div>
+        </div> <!-- / .row --> 
+      </div> <!-- / .container -->
+    </section>
+
+
+
+    
+    <!-- SHAPE
+    ================================================== -->
+<div class="position-relative mt-n8">
+      <div class="shape shape-bottom shape-fluid-x svg-shim text-white">
+        @@include("assets/img/shapes/curves/curve-3.svg")
+      </div>
+    </div>
+
+
+
+    <!-- TESTIMONIALS
+    ================================================== -->
+<!--    <section class="py-8  py-md-9  py-lg-12  bg-white">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-12 col-md-10 col-lg-8 text-center">
+            
+            <!~~ Heading ~~>
+            <h2 class="font-weight-bold">
+              Our customers are our biggest fans.
+            </h2>
+
+            <!~~ Text ~~>
+            <p class="font-size-lg text-muted mb-7 mb-md-9">
+              We dont' like to brag, but we don't mind letting our customers do it for us. Here are a few nice things folks have said about our themes over the years.
+            </p>
+
+          </div>
+        </div> <!~~ / .row ~~>
+        <div class="row">
+          <div class="col-12">
+            
+            <!~~ Card ~~>
+            <div class="card card-row shadow-light-lg mb-6">
+              <div class="row no-gutters">
+                <div class="col-12 col-md-6">
+
+                  <!~~ Slider ~~>
+                  <div class="card-img-slider" data-flickity='{"fade": true, "imagesLoaded": true, "pageDots": false, "prevNextButtons": false, "asNavFor": "#blogSlider", "draggable": false}'>
+                    <a class="card-img-left bg-cover" style="background-image: url(assets/img/photos/photo-1.jpg);" href="#!">
+
+                      <!~~ Image (placeholder) ~~>
+                      <img src="assets/img/photos/photo-1.jpg" alt="..." class="img-fluid d-md-none invisible">
+
+                    </a>
+                    <a class="card-img-left bg-cover" style="background-image: url(assets/img/photos/photo-26.jpg);" href="#!">
+
+                      <!~~ Image (placeholder) ~~>
+                      <img src="assets/img/photos/photo-26.jpg" alt="..." class="img-fluid d-md-none invisible">
+                      
+                    </a>
+                  </div>
+
+                  <!~~ Shape ~~>
+                  <div class="shape shape-right shape-fluid-y svg-shim text-white d-none d-md-block">
+                    @@include("assets/img/shapes/curves/curve-4.svg")
+                  </div>
+
+                </div>
+                <div class="col-12 col-md-6 position-static">
+
+                  <!~~ Slider ~~>
+                  <div class="position-static" data-flickity='{"wrapAround": true, "pageDots": false, "imagesLoaded": true, "adaptiveHeight": true}' id="blogSlider">
+                    <div class="w-100">
+
+                      <!~~ Body ~~>
+                      <div class="card-body">
+                        <blockquote class="blockquote text-center mb-0">
+                          
+                          <!~~ Brand ~~>
+                          <div class="row justify-content-center mb-5 mb-md-7">
+                            <div class="col-6 col-sm-4 col-md-7 col-lg-5">
+                              
+                              <!~~ Logo ~~>
+                              <div class="img-fluid svg-shim" style="color: #FF5A5F;">
+                                @@include("assets/img/brands/logotype/airbnb.svg")
+                              </div>
+
+                            </div>
+                          </div> <!~~ / .row ~~>
+                          
+                          <!~~ Text ~~>
+                          <p class="mb-5 mb-md-7">
+                            “Landkit is hands down the most useful front end Bootstrap theme I've ever used. I can't wait to use it again for my next project.”
+                          </p>
+
+                          <!~~ Footer ~~>
+                          <footer class="blockquote-footer">
+                            <span class="h6 text-uppercase">Dave Gamache</span>
+                          </footer>
+
+                        </blockquote>
+                      </div>
+
+                    </div>
+                    <div class="w-100">
+
+                      <!~~ Body ~~>
+                      <div class="card-body">
+                        <blockquote class="blockquote text-center mb-0">
+                          
+                          <!~~ Brand ~~>
+                          <div class="row justify-content-center mb-5 mb-md-7">
+                            <div class="col-6 col-sm-4 col-md-7 col-lg-5">
+                              
+                              <!~~ Logo ~~>
+                              <div class="img-fluid svg-shim" style="color: #3F5D87;">
+                                @@include("assets/img/brands/logotype/instagram.svg")
+                              </div>
+
+                            </div>
+                          </div> <!~~ / .row ~~>
+                          
+                          <!~~ Text ~~>
+                          <p class="mb-5 mb-md-7">
+                            “I've never used a theme as versatile and flexible as Landkit. It's my go to for building landing sites on almost any project.”
+                          </p>
+
+                          <!~~ Footer ~~>
+                          <footer class="blockquote-footer">
+                            <span class="h6 text-uppercase">Russ D'Sa</span>
+                          </footer>
+
+                        </blockquote>
+                      </div>
+                    
+                    </div>
+                  </div>
+
+                </div>
+              </div> <!~~ / .row ~~>
+            </div>
+
+          </div>
+        </div> <!~~ / .row ~~>
+      </div> <!~~ / .container ~~>
+    </section>
+
+    <!~~ SHAPE
+    ================================================== ~~>
+    <div class="position-relative mt-n8">
+      <div class="shape shape-bottom shape-fluid-x svg-shim text-gray-200">
+        @@include("assets/img/shapes/curves/curve-3.svg")
+      </div>
+    </div>-->
+
+
+    <!-- SHAPE
+    ================================================== -->
+<!--    <div class="position-relative  mt-8">
+      <div class="shape shape-bottom shape-fluid-x svg-shim text-white ">
+        @@include("assets/img/shapes/curves/curve-2.svg")
+        <!~~
+        @@include("assets/img/shapes/curves/curve-3.svg")
+      ~~>
+      </div>
+    </div>
+
+-->
+
+
+
+
+
+
+    <!-- CONTACT
+    ================================================== -->
+<!--    <section class="py-12 py-md-13   bg-gray-200  m-n8">
+      <div class="container pb-8">
+        <div class="row align-items-center">
+          <div class="col-12 col-md-5 col-lg-6 order-md-1">
+            
+            <!~~ Image ~~>
+            <img src="assets/img/illustrations/illustration-3.png" alt="..." class="img-fluid mb-6 mb-md-0" data-aos="fade-up" data-aos-delay="100">
+
+          </div>
+          <div class="col-12 col-md-7 col-lg-6 order-md-2" data-aos="fade-up">
+            
+            <!~~ Heading ~~>
+            <h2>
+               Ready to start?
+            </h2>
+
+            <!~~ Text ~~>
+            <p class="font-size-lg text-gray-700 mb-6">
+             We can help you build a better business faster. Tried and true systems for projects small and large.
+            </p>
+
+            <!~~ Stats ~~>
+              <a href="contact.html" class="btn btn-primary btn-sm lift">
+                GET IN TOUCH
+              </a>
+
+          </div>
+        </div> <!~~ / .row ~~> 
+      </div> <!~~ / .container ~~>
+    </section>-->
+
+
+
+
+    <!-- CONTACT
+    ================================================== -->
+    <div class="pt-md-5  bg-white"></div>
+    <section class=" py-10 py-md-13 bg-white " >
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-12 col-md-10 col-lg-8 text-center">
+            
+            <!-- Heading -->
+            <h2 class="font-weight-bold">
+              Ready to start?
+            </h2>
+
+            <!-- Text -->
+            <p class="font-size-lg text-muted mb-8 px-lg-9">
+              We can help you build a better business faster. Tried and true systems for projects small and large.
+            </p>
+
+            <!-- Button -->
+            <a  href="@@webRoot/contact.html" class="btn btn-primary lift">
+              GET IN TOUCH
+            </a>
+
+          </div>
+        </div> <!-- / .row -->
+      </div> <!-- / .container -->
+    </section>
+
+
+
+
+
+
+
+
+    <!-- SHAPE
+    ================================================== -->
+    <div class="position-relative ">
+      <div class="shape shape-bottom shape-fluid-x svg-shim text-dark">
+        @@include("assets/img/shapes/curves/curve-1.svg")
+      </div>
+    </div>
+
+    <!-- FOOTER
+    ================================================== -->
+    @@include("partials/footer.html", {
+      "classList": "bg-dark  border-gray-800-50"
+    })
+
+
+    <!-- JAVASCRIPT
+    ================================================== -->
+    @@include("partials/scripts.html")
+      
+  </body>
+</html>

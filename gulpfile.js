@@ -19,62 +19,58 @@ const useref = require('gulp-useref');
 
 // Define paths
 const paths = {
-  base:   {
-    base:         {
-      dir:    './'
+  base: {
+    base: {
+      dir: './'
     },
-    node:         {
-      dir:    './node_modules'
-    },
-    packageLock:  {
-      files:  './package-lock.json'
+    node: {
+      dir: './node_modules'
     }
   },
-  dist:   {
-    base:   {
-      dir:    './dist'
+  dist: {
+    base: {
+      dir: './dist'
     },
-    libs:   {
-      dir:    './dist/assets/libs'
+    libs: {
+      dir: './dist/assets/libs'
     }
   },
-  src:    {
-    base:   {
-      dir:    './src',
-      files:  './src/**/*'
+  src: {
+    base: {
+      dir: './src',
+      files: './src/**/*'
     },
-    css:    {
-      dir:    './src/assets/css',
-      files:  './src/assets/css/**/*'
+    css: {
+      dir: './src/assets/css',
+      files: './src/assets/css/**/*'
     },
-    html:   {
-      dir:    './src',
-      files:  './src/**/*.html',
+    html: {
+      dir: './src',
+      files: './src/**/*.html',
     },
-    img:    {
-      dir:    './src/assets/img',
-      files:  './src/assets/img/**/*',
+    img: {
+      dir: './src/assets/img',
+      files: './src/assets/img/**/*',
     },
-    js:     {
-      dir:    './src/assets/js',
-      files:  './src/assets/js/**/*'
+    js: {
+      dir: './src/assets/js',
+      files: './src/assets/js/**/*'
     },
-    partials:   {
-      dir:    './src/partials',
-      files:  './src/partials/**/*'
+    partials: {
+      dir: './src/partials',
+      files: './src/partials/**/*'
     },
-    scss:   {
-      dir:    './src/assets/scss',
-      files:  './src/assets/scss/**/*',
-      main:   './src/assets/scss/*.scss'
+    scss: {
+      dir: './src/assets/scss',
+      files: './src/assets/scss/**/*',
+      main: './src/assets/scss/*.scss'
     },
-    tmp:    {
-      dir:    './src/.tmp',
-      files:  './src/.tmp/**/*'
+    tmp: {
+      dir: './src/.tmp',
+      files: './src/.tmp/**/*'
     }
   }
 };
-
 
 //
 // Tasks ===================================
@@ -130,11 +126,6 @@ gulp.task('clean:tmp', function(callback) {
   callback();
 });
 
-gulp.task('clean:packageLock', function(callback) {
-  del.sync(paths.base.packageLock.files);
-  callback();
-});
-
 gulp.task('clean:dist', function(callback) {
   del.sync(paths.dist.base.dir);
   callback();
@@ -156,7 +147,9 @@ gulp.task('copy:all', function() {
 
 gulp.task('copy:libs', function() {
   return gulp
-    .src(npmdist(), { base: paths.base.node.dir })
+    .src(npmdist(), {
+      base: paths.base.node.dir
+    })
     .pipe(gulp.dest(paths.dist.libs.dir));
 });
 
@@ -181,6 +174,6 @@ gulp.task('html', function() {
     .pipe(gulp.dest(paths.dist.base.dir));
 });
 
-gulp.task('build', gulp.series(gulp.parallel('clean:tmp', 'clean:packageLock', 'clean:dist', 'copy:all', 'copy:libs'), 'scss', 'html'));
+gulp.task('build', gulp.series(gulp.parallel('clean:tmp', 'clean:dist', 'copy:all', 'copy:libs'), 'scss', 'html'));
 
 gulp.task('default', gulp.series(gulp.parallel('fileinclude', 'scss'), gulp.parallel('browsersync', 'watch')));

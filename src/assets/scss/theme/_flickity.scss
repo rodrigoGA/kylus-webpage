@@ -9,7 +9,8 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  width: $input-height; height: $input-height;
+  width: $input-height;
+  height: $input-height;
   background-color: $primary;
   box-shadow: $box-shadow-light;
   color: $white;
@@ -25,10 +26,11 @@
 }
 
 .flickity-button.previous {
+  left: 0;
+  transform: translate(calc(-50% + #{$grid-gutter-width / 4}), -50%);
 
   @include media-breakpoint-up(md) {
-    left: 0;
-    transform: translate(-50%, -50%); 
+    transform: translate(-50%, -50%);
   }
 
   &::before {
@@ -37,9 +39,10 @@
 }
 
 .flickity-button.next {
+  right: 0;
+  transform: translate(calc(50% - #{$grid-gutter-width / 4}), -50%);
 
   @include media-breakpoint-up(md) {
-    right: 0;
     transform: translate(50%, -50%);
   }
 
@@ -64,16 +67,19 @@
 // Button bottom
 
 .flickity-button-bottom .flickity-button {
-  top: auto; bottom: 1.5rem;
+  top: auto;
+  bottom: 1.5rem;
   transform: none;
 }
 
 .flickity-button-bottom .flickity-button.previous {
-  left: auto; right: 6.375rem;
+  left: auto;
+  right: 6.375rem;
 }
 
 .flickity-button-bottom .flickity-button.next {
-  left: auto; right: 2.5rem;
+  left: auto;
+  right: 2.5rem;
 }
 
 

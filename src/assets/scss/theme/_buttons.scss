@@ -4,7 +4,8 @@
 //
 
 .btn > img {
-  max-height: 1em; width: auto;
+  max-height: 1em;
+  width: auto;
 }
 
 .btn:not([class*="btn-outline"]) {
@@ -20,6 +21,11 @@
 
   @include hover-focus {
     background-color: $white;
+    color: darken($primary, 5%);
+  }
+
+  &.active {
+    background-color: darken($white, 5%);
     color: darken($primary, 5%);
   }
 }
@@ -43,6 +49,11 @@
     background-color: darken($gray-400, 5%);
     color: darken($white, 5%);
   }
+
+  &.active {
+    background-color: darken($gray-400, 5%);
+    color: darken($white, 5%);
+  }
 }
 
 .btn-outline-gray-300 {
@@ -50,6 +61,12 @@
   color: $primary;
 
   @include hover-focus {
+    background-color: $primary;
+    border-color: $primary;
+    color: $white;
+  }
+
+  &.active {
     background-color: $primary;
     border-color: $primary;
     color: $white;
