@@ -8,10 +8,18 @@
 // Spans the whole with of the viewport
 
 .img-cover {
-  width: 100vw; height: auto;
+  width: 100vw;
+  height: auto;
   margin-left: calc(50% - 50vw);
 }
 
+// Extending .img-fluid class to support nested images
+
+.img-fluid > img,
+.img-fluid > svg {
+  max-width: inherit;
+  height: inherit;
+}
 
 // Figure
 

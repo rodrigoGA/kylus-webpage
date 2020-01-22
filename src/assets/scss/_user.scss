@@ -2,8 +2,396 @@
 // user.scss
 // Use this to write your custom SCSS
 //
+
+
+#stripes, #stripes span {
+    position: absolute;
+}
+#stripes {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    -webkit-transform: skewY(-12deg);
+    transform: skewY(-12deg);
+    -webkit-transform-origin: 0;
+    transform-origin: 0;
+    background: linear-gradient(150deg,#53f 15%,#05d5ff 70%,#a6ffcb 94%);
+}
+#stripes span {
+    position: absolute;
+}
+#stripes span{
+    height:40px
+}
+#stripes :first-child{
+    width:50%; 
+    left:50%;
+    top:40px;
+    background:#4c29ff;
+}
+#stripes :nth-child(2){
+    width:14%; 
+    right:0;
+    bottom:40px; 
+    background:#2be7ff; 
+}
+#stripes :nth-child(3){
+    width:25%; 
+    bottom:0; 
+    right:0; 
+    background:#a1ffc8 
+}
+@media (min-width:670px){
+    #stripes span{
+        height:150px
+    }
+    #stripes :first-child{
+        top:0;
+        background:#4750ff
+    }
+    #stripes :nth-child(2){
+        width:16.66667%;
+        width:calc(100% / 6);
+        top:300px;
+        top:calc(150px * 2);
+        bottom:auto;
+        background:#0dcfff
+    }
+    #stripes :nth-child(3){
+        width:33.33333%;
+        width:calc(100% / 3);
+        right:auto;background:#11bdff
+    }
+}
+@media (min-width:880px){
+    #stripes span{
+        height:190px
+    }
+    #stripes :first-child{
+        width:33.33333%;
+        width:calc(100% / 3);
+        left:-16.66666%;
+        left:calc(calc(calc(100% / 3) / 2) * -1);
+        background:#53f
+    }
+    #stripes :nth-child(2){
+        width:33.33333%;
+        width:calc(100% / 3);
+        top:0;
+        left:16.66666%;
+        left:calc(calc(100% / 3) / 2);
+        right:auto;
+        background:#4553ff
+    }
+    #stripes :nth-child(3){
+        width:33.33333%;
+        width:calc(100% / 3);
+        left:49.99999%;
+        left:calc(calc(calc(100% / 3) / 2) + calc(100% / 3));
+        bottom:auto;background:#4f40ff
+    }
+    #stripes :nth-child(4){
+        width:33.33333%;width:calc(100% / 3);
+        top:380px;top:calc(190px * 2);
+        right:-16.66666%;
+        right:calc(calc(calc(100% / 3) / 2) * -1);
+        background:#25ddf5
+    }
+    #stripes :nth-child(5){
+        width:33.33333%;width:calc(100% / 3);
+        bottom:0;background:#1fa2ff
+    }
+}
+
+
+.bg-gradient-primary {
+  background: -o-linear-gradient(40deg, #6e00ff 0, #bb00ff 100%) !important;
+  background: linear-gradient(50deg, #6e00ff 0, #bb00ff 100%) !important;
+}
+
+
+.bg-gradient-terminus {
+    background:linear-gradient(150deg,#53f 15%,#05d5ff 70%,#a6ffcb 94%) !important;
+}
+
+.bg-gradient-secondary {
+  background: -o-linear-gradient(40deg, #EFF2F7 0, #eff0f7 100%) !important;
+  background: linear-gradient(50deg, #EFF2F7 0, #eff0f7 100%) !important;
+}
+
+.bg-gradient-success {
+  background: -o-linear-gradient(40deg, #36B37E 0, #36b3a4 100%) !important;
+  background: linear-gradient(50deg, #36B37E 0, #36b3a4 100%) !important;
+}
+
+.bg-gradient-info {
+  background: -o-linear-gradient(40deg, #00B8D9 0, #0077d9 100%) !important;
+  background: linear-gradient(50deg, #00B8D9 0, #0077d9 100%) !important;
+}
+
+.bg-gradient-warning {
+  background: -o-linear-gradient(40deg, #FFAB00 0, #fff800 100%) !important;
+  background: linear-gradient(50deg, #FFAB00 0, #fff800 100%) !important;
+}
+
+.bg-gradient-danger {
+  background: -o-linear-gradient(40deg, #FF5630 0, #ff9430 100%) !important;
+  background: linear-gradient(50deg, #FF5630 0, #ff9430 100%) !important;
+}
+/*
+.bg-gradient-light {
+  background: -o-linear-gradient(40deg, #EFF2F7 0, #eff0f7 100%) !important;
+  background: linear-gradient(50deg, #EFF2F7 0, #eff0f7 100%) !important;
+}*/
+
+.bg-gradient-dark {
+  background: -o-linear-gradient(40deg, #273444 0, #272b44 100%) !important;
+  background: linear-gradient(50deg, #273444 0, #272b44 100%) !important;
+}
+
+.bg-gradient-neutral {
+  background: -o-linear-gradient(40deg, #FFF 0, white 100%) !important;
+  background: linear-gradient(50deg, #FFF 0, white 100%) !important;
+}
+
+.bg-gradient-white {
+  background: -o-linear-gradient(40deg, #FFF 0, white 100%) !important;
+  background: linear-gradient(50deg, #FFF 0, white 100%) !important;
+}
+
+.bg-translucent-primary {
+  background-color: rgba(95, 0, 219, 0.6) !important;
+}
+
+
+.section-rotate {
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+  overflow: hidden;
+  background: transparent;
+  position: relative;
+  z-index: 0;
+}
+.section-rotate .section-inner {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -2;
+}
+
+@media (min-width: 992px) {
+  .section-rotate {
+    min-height: 880px;
+    padding-top: 8rem;
+    padding-bottom: 8rem;
+  }
+  .section-rotate .section-inner {
+    background: inherit;
+    overflow: hidden;
+  }
+  .section-rotate .section-inner + .container {
+    position: relative;
+    z-index: 0;
+  }
+  .section-rotate .section-inner-bg {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+  }
+}
+@media (min-width: 1200px) {
+  .section-rotate {
+    padding-top: 8rem;
+    padding-bottom: 12rem;
+  }
+  .section-rotate .section-inner {
+    top: -40%;
+    left: -1rem;
+    width: 130%;
+    height: 124%;
+    -webkit-transform: rotate(-7deg);
+        -ms-transform: rotate(-7deg);
+            transform: rotate(-7deg);
+    border-bottom-left-radius: 3rem;
+  }
+  .section-rotate .section-inner + .container {
+    padding-left: 2rem;
+  }
+  .section-rotate .container {
+    position: relative;
+  }
+}
+@media only screen and (min-width: 2000px) {
+  .section-rotate .section-inner {
+    top: -40%;
+    left: -1rem;
+    width: 120%;
+    height: 118%;
+  }
+  .section-rotate .container {
+    position: relative;
+  }
+}
+
+.bg-absolute-cover {
+  background-repeat: no-repeat;
+  position: absolute;
+  overflow: hidden;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 100;
+}
+.bg-absolute-cover svg {
+  height: 1000px;
+  pointer-events: none;
+}
+
+.bg-size--contain {
+    background-size: contain;
+}
+.bg-size--cover {
+  background-size: cover;
+}
+
+.bg-size--contain {
+  background-size: contain;
+}
+
+
+@media (max-width: 1199.98px) {
+  .bg-lg-cover {
+    background-image: none !important;
+  }
+}
+@media (max-width: 991.98px) {
+  .bg-md-cover {
+    background-image: none !important;
+  }
+}
+
+
+.align-items-center {
+    -webkit-box-align: center !important;
+    -ms-flex-align: center !important;
+    align-items: center !important;
+}
+
+
+
+
+figure {
+    max-width: 100%;
+    min-height: 1px;
+}
+
+
+.fill-blue {
+  fill: #2684FF !important;
+}
+
+.stroke-blue {
+  stroke: #2684FF !important;
+}
+
+.fill-indigo {
+  fill: #6e00ff !important;
+}
+
+.stroke-indigo {
+  stroke: #6e00ff !important;
+}
+
+.fill-purple {
+  fill: #510FA8 !important;
+}
+
+.stroke-purple {
+  stroke: #510FA8 !important;
+}
+
+.fill-pink {
+  fill: #f074ad !important;
+}
+
+.stroke-pink {
+  stroke: #f074ad !important;
+}
+
+.fill-red {
+  fill: #FF5630 !important;
+}
+
+.stroke-red {
+  stroke: #FF5630 !important;
+}
+
+.fill-orange {
+  fill: #FFAB00 !important;
+}
+
+.stroke-orange {
+  stroke: #FFAB00 !important;
+}
+
+.fill-yellow {
+  fill: #ffcc00 !important;
+}
+
+.stroke-yellow {
+  stroke: #ffcc00 !important;
+}
+
+.fill-green {
+  fill: #36B37E !important;
+}
+
+.stroke-green {
+  stroke: #36B37E !important;
+}
+
+.fill-teal {
+  fill: #00B8D9 !important;
+}
+
+.stroke-teal {
+  stroke: #00B8D9 !important;
+}
+
+.fill-cyan {
+  fill: #4bd6e5 !important;
+}
+
+.stroke-cyan {
+  stroke: #4bd6e5 !important;
+}
+
+.fill-white {
+  fill: #FFF !important;
+}
+
+.stroke-white {
+  stroke: #FFF !important;
+}
+
+.fill-gray {
+  fill: #C0CCDA !important;
+}
+
+
+
+
+
+// CSS NORMAL
 .navbar-dark .navbar-brand {
   filter: none;
+}
+.footer-brand {
+  filter: none !important;
+  max-width: 200px !important;
 }
 
 .navbar-brand-img {

@@ -70,3 +70,26 @@
   top: 1rem;
   right: 1rem;
 }
+
+
+// Active
+
+.badge-white-soft.active {
+  background-color: $white;
+  color: $primary;
+
+  @include hover-focus {
+    background-color: darken($white, 5%);
+    color: $primary;
+  }
+}
+
+.badge-secondary-soft.active {
+  background-color: $primary;
+  color: color-yiq($primary);
+
+  @include hover-focus {
+    background-color: darken($primary, 5%);
+    color: color-yiq(darken($primary, 5%));
+  }
+}

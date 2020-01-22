@@ -11,4 +11,9 @@
     background-color: fade-in($bg, .05);
     color: $color;
   }
+
+  &.active {
+    background-color: fade-in($bg, .05);
+    color: $color;
+  }
 }

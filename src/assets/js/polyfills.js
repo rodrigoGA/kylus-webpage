@@ -9,20 +9,17 @@
 // Polyfill to solve shortcomings of SVG scaling in IE. Inspired by http://nicolasgallagher.com/canvas-fix-svg-scaling-in-internet-explorer/.
 
 (function() {
-  
   //
   // Variables
   //
 
   var svg = document.querySelectorAll('.svg-shim > svg');
 
-
   //
   // Methods
   //
 
   function init(elem) {
-
     // Get element's fill value
     var color = window.getComputedStyle(elem, null).getPropertyValue('color');
 
@@ -33,7 +30,7 @@
     content = content.replace(/</g, '%3C');
     content = content.replace(/>/g, '%3E');
     content = content.replace(/#/g, '%23');
-    content = content.replace(/"/g, '\'');
+    content = content.replace(/"/g, "'");
     content = 'data:image/svg+xml,' + content;
 
     // Create a replacer image
@@ -47,7 +44,6 @@
     parent.removeChild(elem);
   }
 
-
   //
   // Events
   //
@@ -58,5 +54,4 @@
       init(elem);
     });
   }
-
 })();

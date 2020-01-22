@@ -44,6 +44,10 @@
 
       // Viewport units
 
+      .vh-#{$width}-#{$size} {
+        height: #{$size}vh;
+      }
+
       .vw-#{$width}-#{$size} {
         width: #{$size}vw;
       }

@@ -8,7 +8,6 @@
 //
 
 .custom-switch {
-  height: $custom-switch-height;
   min-height: $custom-switch-height;
 
   .custom-control-label {
@@ -18,6 +17,7 @@
       height: $custom-switch-height;
       border-radius: $custom-switch-height / 2;
     }
+
     &::after {
       top: (($font-size-base * $line-height-base - $custom-switch-height) / 2 + $custom-switch-spacing);
       left: $custom-switch-spacing - $custom-control-gutter - $custom-switch-width;
@@ -46,6 +46,7 @@
     &::before {
       background-color: $custom-switch-bg-dark;
     }
+
     &::after {
       background-color: $custom-switch-indicator-bg-dark;
     }
@@ -56,6 +57,7 @@
     &::before {
       background-color: $custom-switch-active-bg-dark;
     }
+
     &::after {
       background-color: $custom-switch-active-indicator-bg-dark;
     }
