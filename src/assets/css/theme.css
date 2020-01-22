@@ -13579,9 +13579,11 @@ body.compensate-for-scrollbar {
 .bg-gradient-danger {
   background: linear-gradient(50deg, #FF5630 0, #ff9430 100%) !important; }
 
+/*
 .bg-gradient-light {
-  background: linear-gradient(50deg, #EFF2F7 0, #eff0f7 100%) !important; }
-
+  background: -o-linear-gradient(40deg, #EFF2F7 0, #eff0f7 100%) !important;
+  background: linear-gradient(50deg, #EFF2F7 0, #eff0f7 100%) !important;
+}*/
 .bg-gradient-dark {
   background: linear-gradient(50deg, #273444 0, #272b44 100%) !important; }
 
