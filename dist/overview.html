@@ -440,25 +440,37 @@
           <!-- Navigation -->
           <ul class="navbar-nav ml-auto">
             <li class="nav-item ">
+              <a class="nav-link " id="navbarLandings"  href="./home.html" aria-expanded="false">
+                Inicio
+              </a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarCompanyDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Company
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarCompanyDropdown">
+                <a class="dropdown-item" href="./company.html">About us</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="./portfolio.html">Our work</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="./careers.html">Careers</a>
+              </div>
+            </li>
+
+            <li class="nav-item ">
               <a class="nav-link " id="navbarLandings"  href="./services.html" aria-expanded="false">
-                SERVICES
+                Services
               </a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link " id="navbarPages"  href="./company.html" aria-expanded="false">
-                COMPANY
-              </a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" id="navbarAccount"  href="./careers.html" aria-expanded="false">
-                CAREERS
-              </a>
-            </li>        
+            </li>     
             <li class="nav-item">
               <a class="nav-link"  href="./contact.html" aria-expanded="false"> 
-               CONTACT
+               Contact
                </a>
             </li>
+
+
+
+
           </ul>
 
           <!-- Button 
@@ -1545,18 +1557,14 @@
           <div class="col-12 col-md-6">
         
             <!-- Brand -->
-            <img src="./assets/img/brand-blanco.svg" alt="..." class="footer-brand img-fluid mb-2">
-
+            <img src="./assets/img/brand-name-inline.svg" alt="..." class="footer-brand img-fluid mb-2">
             <!-- Text -->
             <p class="text-gray-700 mb-2">
               Su socio de IT confiable
             </p>
-       
 
-          </div>
-          <div class="col-12 col-md-6" >
              <!-- Social -->
-            <ul class="list-unstyled list-inline list-social mb-6 mb-md-0 text-right">
+            <ul class="list-unstyled list-inline list-social mb-6 mb-md-0">
               <li class="list-inline-item list-social-item mr-3">
                 <a href="mailto:info@terminuslabs.com.uy" class="text-decoration-none">
                   <img src="./assets/img/icons/social/email.svg" class="list-social-icon" alt="...">
@@ -1578,7 +1586,21 @@
                 </a>
               </li>
             </ul>
+       
+
           </div>
+          <div class="col-12 col-md-6" >
+            <div class="btn-group btn-group-toggle float-right" data-toggle="buttons">
+              <label class="btn btn-outline-secondary btn-sm active" data-toggle="tooltip" data-placement="bottom" title="Inglés" >
+                <input type="radio" name="options" id="option1" autocomplete="off" checked> En
+              </label>
+              <label class="btn btn-outline-secondary btn-sm" data-toggle="tooltip" data-placement="bottom" title="Español" >
+                <input type="radio" name="options" id="option2" autocomplete="off"> Es
+              </label>
+            </div>
+          </div>
+
+    
 
 
 

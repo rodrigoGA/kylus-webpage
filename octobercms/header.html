@@ -1,0 +1,34 @@
+<!-- Required meta tags -->
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+{% component 'SeoPage' %}
+<!-- Libs CSS -->
+<link rel="stylesheet" href="{{ 'assets/fonts/Feather/feather.css'|theme }}">
+<link rel="stylesheet" href="{{ 'assets/libs/flickity/dist/flickity.min.css'|theme }}" >
+<link rel="stylesheet" href="{{ 'assets/libs/flickity-fade/flickity-fade.css'|theme }}">
+<link rel="stylesheet" href="{{ 'assets/libs/aos/dist/aos.css'|theme }}">
+<link rel="stylesheet" href="{{ 'assets/libs/jarallax/dist/jarallax.css'|theme }}" >
+<link rel="stylesheet" href="{{ 'assets/libs/highlightjs/styles/vs2015.css'|theme }}" >
+<link rel="stylesheet" href="{{ 'assets/libs/@fancyapps/fancybox/dist/jquery.fancybox.min.css'|theme }}" >
+
+<!-- Map -->
+<link href='https://api.mapbox.com/mapbox-gl-js/v0.53.0/mapbox-gl.css' rel='stylesheet' />
+
+{% if this.page.meta_title %}
+    <title>{{ this.page.meta_title|_ }} - {{ 'site.name'|_ }}</title>
+    <meta name="title" content="{{ this.page.meta_title|_ }}">
+{% else %}
+    <title>{{ this.page.title }} - {{ 'site.name'|_ }}</title>
+{% endif %}
+{% if this.page.meta_description %}
+    <meta name="description" content="{{ this.page.meta_description|_ }}">
+{% endif %}
+
+
+<!-- Theme CSS -->
+<!-- build:css @@webRoot/assets/css/theme.min.css -->
+{% styles %}
+<link href="{{ [
+    'assets/css/theme.min.css'
+]|theme }}" rel="stylesheet">
+<!-- endbuild -->

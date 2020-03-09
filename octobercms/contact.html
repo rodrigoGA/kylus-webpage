@@ -1,8 +1,6 @@
 <!-- NAVBAR
 ================================================== -->
-{% partial 'site/navbar' classList="navbar-light bg-white fixed-top border-bottom" type="boxed" %}
-
-
+{% partial 'site/navbar' classList="navbar-dark navbar-togglable fixed-top cambiar-color" type="boxed" %}
 
 
 <!-- WELCOME
@@ -32,7 +30,7 @@
 ================================================== -->
 <div class="position-relative">
   <div class="shape shape-bottom shape-fluid-x svg-shim text-light">
-  	{% partial 'snippets/theme-include' src="assets/img/shapes/curves/curve-1.svg"  %}
+    {% partial 'snippets/theme-include' src="assets/img/shapes/curves/curve-1.svg"  %}
   </div>
 </div>
 
@@ -71,20 +69,18 @@
         
         <!-- Heading -->
         <h6 class="text-uppercase text-gray-700 mb-1">
-          Email us
+          {{ 'contact-email-us' |_ }}
         </h6>
 
         <!-- Link -->
-        <a href="#!" class="h4">
-          support@goodthemes.co
+        <a href="mailto:info@terminuslabs.com.uy" class="h4">
+          info@terminuslabs.com.uy
         </a>
 
       </div>
     </div> <!-- / .row -->
   </div>
 </section>
-
-
 
 <!-- FORM
 ================================================== -->
@@ -107,73 +103,7 @@
     </div> <!-- / .row -->
     <div class="row justify-content-center">
       <div class="col-12 col-md-12 col-lg-10">
-        
-        <!-- Form -->
-        <form>
-          <div class="row">
-            <div class="col-12">
-              <div class="form-group mb-5">
-                
-                <!-- Label -->
-                <label for="contactName">                         
-         			{{ 'contact-form-name' |_ }}
-                </label>
-
-                <!-- Input -->
-                <input type="text" class="form-control" id="contactName" placeholder="{{ 'contact-form-name-placeholder' |_ }}">
-
-              </div>
-            </div>
-            <div class="col-12 col-md-6">
-              <div class="form-group mb-5">                    
-                <!-- Label -->
-                <label for="contactEmail">
-                  {{ 'contact-form-email' |_ }}
-                </label>
-                <!-- Input -->
-                <input type="email" class="form-control" id="contactEmail" placeholder="{{ 'contact-form-email-placeholder' |_ }}">
-
-              </div>
-            </div>
-            <div class="col-12 col-md-6">
-              <div class="form-group mb-5">                    
-                <!-- Label -->
-                <label for="contactEmail">
-                  {{ 'contact-form-telefono' |_ }}
-                </label>
-                <!-- Input -->
-                <input type="tel" class="form-control" id="contactPhone" placeholder="{{ 'contact-form-telefono-placeholder' |_ }}">
-
-              </div>
-            </div>
-          </div> <!-- / .row -->
-          <div class="row">
-            <div class="col-12">
-              <div class="form-group mb-7 mb-md-9">
-                
-                <!-- Label -->
-                <label for="contactMessage">
-                  {{ 'contact-form-mensaje' |_ }}
-                </label>
-
-                <!-- Input -->
-                <textarea class="form-control" id="contactMessage" rows="5" placeholder="{{ 'contact-form-mensaje-placeholder' |_ }}"></textarea>
-
-              </div>
-            </div>
-          </div> <!-- / .row -->
-          <div class="row justify-content-center">
-            <div class="col-auto">
-              
-              <!-- Submit -->
-              <button type="submit" class="btn btn-primary lift">
-                {{ 'contact-form-enviarmensaje' |_ }}
-              </button>
-
-            </div>
-          </div> <!-- / .row -->
-        </form>
-
+        {% component 'contactForm' %}
       </div>
     </div> <!-- / .row -->
   </div> <!-- / .container -->

@@ -3,6 +3,17 @@
 // Use this to write your custom SCSS
 //
 
+//fix alertas en el tema
+.alert-success p {
+    margin: 0;
+}
+
+//se agranda el tama;o de los iconos
+.icon object {
+    width: 3rem;
+    height: 3rem;
+}
+
 
 #stripes, #stripes span {
     position: absolute;
@@ -389,10 +400,11 @@ figure {
 .navbar-dark .navbar-brand {
   filter: none;
 }
+/*
 .footer-brand {
   filter: none !important;
   max-width: 200px !important;
-}
+}*/
 
 .navbar-brand-img {
     max-height: 4rem;
