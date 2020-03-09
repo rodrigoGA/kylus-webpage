@@ -1,44 +1,53 @@
 <!-- NAVBAR
 ================================================== -->
-{% partial 'site/navbar' classList="navbar-light bg-white fixed-top border-bottom" type="boxed" %}
+{% partial 'site/navbar' classList="navbar-dark navbar-togglable fixed-top cambiar-color" type="boxed" %}
 
 
 <!-- WELCOME 1
 ================================================== -->
-<section class="py-8  py-md-9  py-lg-12 bg-light bg-">
-<div class="container">
-<div class="row align-items-center">
-  <div class="col-12 col-md-5 col-lg-6 order-md-2">
-    
-    <!-- Image -->
-    <img  src="{{ ('assets/img/illustrations/001_d2.png')|theme }}"  class="img-fluid mw-md-150 mw-lg-130 mb-6 mb-md-0" alt="..." data-aos="fade-up" data-aos-delay="100">
-
+<section class=" position-relative" >
+  <div id="stripes" aria-hidden="true" >
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
   </div>
-  <div class="col-12 col-md-7 col-lg-6 order-md-1" data-aos="fade-up">
-    
-    <!-- Heading -->
-    <h1 class="display-1 text-center text-md-left font-weight-bold">
-      {{ 'home-titulo1' |_ }}
-    </h1>
 
-    <!-- Text -->
-    <p class="lead text-center text-md-left text-muted mb-6 mb-lg-8">
-      <span class="text-primary">TerminusLabs</span>{{ 'home-titulo1_desc' |_ }}
-    </p>
+  <div class="container  pt-10 py-8" >
+    <div class="row align-items-center py-8  py-md-9  py-lg-12">
+      <div class="col-12 col-md-5 col-lg-6 order-md-2 d-none d-sm-block">
         
-    <!-- Buttons -->
-    <div class="text-center text-md-left">
-      <!--<a href="overview.html" class="btn btn-primary shadow lift mr-1">
-        View all pages <i class="fe fe-arrow-right d-none d-md-inline ml-3"></i>
-      </a>-->
-      <a href="contact.html" class="btn btn-primary lift">
-        {{ 'home-contact' |_ }} <i class="fe fe-arrow-right d-none d-md-inline ml-3"></i>
-      </a>
-    </div>
+        <!-- Image -->
+           <img  src="{{ ('assets/img/illustrations/001_d2_compress.png')|theme }}"  class="img-fluid mw-md-150 mw-lg-130 mb-6 mb-md-0" alt="..." data-aos="fade-up" data-aos-delay="100">
 
-  </div>
-</div> <!-- / .row -->
-</div> <!-- / .container -->
+      </div>
+      <div class="col-12 col-md-7 col-lg-6 order-md-1 " data-aos="fade-up">
+        
+        <!-- Heading -->
+        <h1 class="display-1 text-center text-md-left font-weight-bold text-white" >
+        {{ 'home-titulo1' |_ }}
+        </h1>
+
+        <!-- Text -->
+        <p class="lead text-center text-md-left  mb-6 mb-lg-8 text-white">
+           {{ 'home-titulo1_desc' |_ }}
+        </p>
+            
+        <!-- Buttons -->
+        <div class="text-center text-md-left">
+          <!-- <a href="overview.html" class="btn btn-secondary shadow lift mr-1">
+            View all pages <i class="fe fe-arrow-right d-none d-md-inline ml-3"></i>
+          </a> -->
+          <a href="contact.html" class="btn btn-light  lift">
+             {{ 'home-contact' |_ }} <i class="fe fe-arrow-right d-none d-md-inline ml-3"></i>
+          </a>
+        </div>
+
+      </div>
+    </div> <!-- / .row -->
+  </div> <!-- / .container -->
+
 </section>
 
 
@@ -48,7 +57,7 @@
 
 <!-- SERVICES
 ================================================== -->
-<section class="py-8  py-md-9  py-lg-12  border-bottom">
+<section class="pb-8  pb-md-9  pb-lg-12 pt-md-1  pt-lg-4  border-bottom">
   <div class="container ">
     <div class="row justify-content-center">
       <div class="col-12 col-md-10 col-lg-10 text-center mb-7 mb-md-9" data-aos="fade-up">
@@ -67,124 +76,32 @@
       </div>
     </div> <!-- / .row -->
 
-    <div class="row pb-8">
-      <div class="col-12 col-md-4 text-center" data-aos="fade-up">
-        
+    {% for i, services in services_grouped %}
+    <div class="row {{loop.last? '':'pb-8'}}">
+      {% for j, service in services %}
+      <div class="col-12 col-md-4 text-center" data-aos="fade-up" data-aos-delay="{{ (j+1)*50}}">
         <!-- Icon -->
         <div class="icon text-primary mb-3">
-          {% partial 'snippets/theme-include' src="assets/img/icons/duotone-icons/Devices/Android.svg"  %}
+          <object data="{{ service.icon |media }}" type="image/svg+xml"></object>
         </div>
-
         <!-- Heading -->
         <h3>
-          {{ 'home-service-movil' |_ }}
+          {{ service.title }}
         </h3>
-
         <!-- Text -->
         <p class="text-muted mb-6 mb-md-0">
-          {{ 'home-service-desc' |_ }}
+          {{ service.short_description }}
         </p>
-
       </div>
-      <div class="col-12 col-md-4 text-center" data-aos="fade-up" data-aos-delay="50">
-
-        <!-- Icon -->
-        <div class="icon text-primary mb-3">
-          {% partial 'snippets/theme-include' src="assets/img/icons/duotone-icons/Devices/Laptop.svg"  %}
-        </div>
-
-        <!-- Heading -->
-        <h3>
-          {{ 'home-service-web' |_ }}
-        </h3>
-
-        <!-- Text -->
-        <p class="text-muted mb-6 mb-md-0">
-          {{ 'home-service-web-desc' |_ }}
-        </p>
-
-      </div>
-      <div class="col-12 col-md-4 text-center" data-aos="fade-up" data-aos-delay="100">
-          
-        <!-- Icon -->
-        <div class="icon text-primary mb-3">
-          {% partial 'snippets/theme-include' src="assets/img/icons/duotone-icons/General/Settings-1.svg"  %}
-        </div>
-
-        <!-- Heading -->
-        <h3>
-          {{ 'home-service-ai' |_ }}
-        </h3>
-
-        <!-- Text -->
-        <p class="text-muted mb-0">
-          {{ 'home-service-ai-desc' |_ }}
-        </p>
-
-      </div>
-    </div> <!-- / .row -->
-    <div class="row">
-      <div class="col-12 col-md-4 text-center" data-aos="fade-up">
-        
-        <!-- Icon -->
-        <div class="icon text-primary mb-3">
-          {% partial 'snippets/theme-include' src="assets/img/icons/duotone-icons/Shopping/Chart-line#1.svg"  %}
-        </div>
-
-        <!-- Heading -->
-        <h3>
-          {{ 'home-service-consultoria' |_ }}
-        </h3>
-
-        <!-- Text -->
-        <p class="text-muted mb-6 mb-md-0">
-          {{ 'home-service-consultoria-desc' |_ }}
-        </p>
-
-      </div>
-      <div class="col-12 col-md-4 text-center" data-aos="fade-up" data-aos-delay="50">
-
-        <!-- Icon -->
-        <div class="icon text-primary mb-3">
-          {% partial 'snippets/theme-include' src="assets/img/icons/duotone-icons/General/Shield-check.svg"  %}
-        </div>
-
-        <!-- Heading -->
-        <h3>
-          {{ 'home-service-qa' |_ }}
-        </h3>
-
-        <!-- Text -->
-        <p class="text-muted mb-6 mb-md-0">
-          {{ 'home-service-qa-desc' |_ }}
-        </p>
-
-      </div>
-      <div class="col-12 col-md-4 text-center" data-aos="fade-up" data-aos-delay="100">
-          
-
-                   <!-- Icon -->
-        <div class="icon text-primary mb-3">
-          {% partial 'snippets/theme-include' src="assets/img/icons/duotone-icons/Code/Settings#4.svg"  %}
-        </div>
-
-        <!-- Heading -->
-        <h3>
-          {{ 'home-service-devops' |_ }}
-        </h3>
-
-        <!-- Text -->
-        <p class="text-muted mb-6 mb-md-0">
-          {{ 'home-service-devops-desc' |_ }}
-        </p>
-
-      </div>
-    </div> <!-- / .row -->
+      {% endfor %}
+    </div>
+    {% endfor %}
+      
     <div class="row">
       <div class="col-12 text-center  mt-7 mt-md-9" data-aos="fade-up">            
         <!-- Stats -->
-          <a  href="@@webRoot/services.html" class="btn btn-primary-soft btn-sm lift mb-7 mb-md-9">            
-          {{ 'home-service-redmore' |_ }}
+          <a  href="{{ 'services'|page }}" class="btn btn-primary-soft btn-sm lift mb-7 mb-md-9">            
+          {{ 'home-service-readmore' |_ }}
           </a>
       </div>
     </div>
@@ -214,15 +131,15 @@
       <div class="col-12 col-md-5 col-lg-6 order-md-2">
         
         <!-- Image -->
-        <img  src="{{ ('assets/img/illustrations/003.png')|theme }}"  alt="..." class="img-fluid mb-6 mb-md-0" data-aos="fade-up" data-aos-delay="100">
+        <img  src="{{ ('assets/img/illustrations/003_compress.png')|theme }}"  alt="..." class="img-fluid mb-6 mb-md-0" data-aos="fade-up" data-aos-delay="100">
 
       </div>
       <div class="col-12 col-md-7 col-lg-6 order-md-1" data-aos="fade-up">
         
         <!-- Heading -->
         <h2 class="font-weight-bold">
-          {{ 'home-company-titulo1' |_ }}. <br>
-          <span class="text-primary">{{ 'home-company-titulo2' |_ }}</span>.
+          {{ 'home-company-titulo1' |_ }} <br>
+          <span class="text-primary">{{ 'home-company-titulo2' |_ }}</span>
         </h2>
 
         <!-- Text -->
@@ -300,7 +217,7 @@
           </div>
         </div> <!-- / .row -->
         <!-- Stats -->
-          <a  href="@@webRoot/company.html" class="btn btn-primary-soft btn-sm lift">
+          <a  href="{{ 'company'|page }}" class="btn btn-primary-soft btn-sm lift">
             {{ 'home-company-readmore' |_ }}
           </a>
 
@@ -341,7 +258,7 @@
         </p>
 
         <!-- Button -->
-        <a  href="@@webRoot/contact.html" class="btn btn-primary lift">
+        <a  href="{{ 'contact'|page }}#info" class="btn btn-primary lift">
           {{ 'home-contact-getintouch' |_ }}
         </a>
 
@@ -352,7 +269,18 @@
 
 
 
+
+
+<!-- SHAPE
+================================================== -->
+<div class="position-relative ">
+  <div class="shape shape-bottom shape-fluid-x svg-shim text-dark">
+    {% partial 'snippets/theme-include' src="assets/img/shapes/curves/curve-1.svg"  %}
+  </div>
+</div>
+
+
+
 <!-- FOOTER
 ================================================== -->
 {% partial 'site/footer' classList="bg-dark  border-gray-800-50" %}
-
