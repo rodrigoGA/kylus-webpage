@@ -14,37 +14,12 @@
     <!-- NAVBAR
     ================================================== -->
     @@include("partials/navbar.html", {
-      "classList": "navbar-light bg-white",
+      "classList": "navbar-light bg-white fixed-top border-bottom",
       "type": "boxed"
     })
 
-    <!-- BREADCRUMB
-    ================================================== -->
-    <nav class="bg-gray-200">
-      <div class="container">
-        <div class="row">
-          <div class="col-12">
-            
-            <!-- Breadcrumb -->
-            <ol class="breadcrumb breadcrumb-scroll">
-              <li class="breadcrumb-item">
-                <a href="blog.html" class="text-gray-700">
-                  Blog
-                </a>
-              </li>
-              <li class="breadcrumb-item active" aria-current="page">
-                Search Results
-              </li>
-            </ol>
-
-          </div>
-        </div> <!-- / .row -->
-      </div> <!-- / .container -->
-    </nav>
-
-    <!-- SEARCH
-    ================================================== -->
-    <section class="py-6">
+  
+    <section class="py-12">
       <div class="container">
         <div class="row">
           <div class="col-12">
@@ -61,7 +36,7 @@
                 </div>
 
                 <!-- Input -->
-                <input type="text" class="form-control border-0 px-1" aria-label="Search our blog..." placeholder="Search our blog..." value="Design Leadership">
+                <input type="text" class="form-control border-0 px-1" aria-label="Search our blog..." placeholder="Search our blog..." value="">
 
                 <!-- Append -->
                 <div class="input-group-append">
@@ -69,7 +44,7 @@
 
                     <!-- Text -->
                     <span class="h6 text-uppercase text-muted d-none d-md-block mb-0 mr-5">
-                      123 results
+                      
                     </span>
 
                     <!-- Button -->
@@ -96,7 +71,7 @@
           <div class="col-12 col-md-6 col-lg-4 d-flex">
             
             <!-- Card -->
-            <div class="card mb-6 shadow-light-lg lift lift-lg">
+            <div class="card mb-6 shadow-light-lg lift lift-lg" onclick="">
 
               <!-- Image -->
               <a class="card-img-top" href="#!">
@@ -114,7 +89,7 @@
               </a>
 
               <!-- Body -->
-              <a class="card-body" href="#!">
+              <a class="card-body" href="@@webRoot/blog-post.html">
 
                 <!-- Heading -->
                 <h3>
@@ -129,7 +104,7 @@
               </a>
                 
               <!-- Meta -->
-              <a class="card-meta mt-auto" href="#!">
+              <a class="card-meta mt-auto" href="">
 
                 <!-- Divider -->
                 <hr class="card-meta-divider">
@@ -160,7 +135,7 @@
             <div class="card mb-6 shadow-light-lg lift lift-lg">
 
               <!-- Image -->
-              <a class="card-img-top" href="#!">
+              <a class="card-img-top" href="@@webRoot/blog-post.html">
 
                 <!-- Image -->
                 <img src="assets/img/photos/photo-14.jpg" alt="..." class="card-img-top">
@@ -175,7 +150,7 @@
               </a>
 
               <!-- Body -->
-              <a class="card-body" href="#!">
+              <a class="card-body" href="@@webRoot/blog-post.html">
 
                 <!-- Heading -->
                 <h3>
@@ -190,7 +165,7 @@
               </a>
                 
               <!-- Meta -->
-              <a class="card-meta mt-auto" href="#!">
+              <a class="card-meta mt-auto" href="">
 
                 <!-- Divider -->
                 <hr class="card-meta-divider">
@@ -221,7 +196,7 @@
             <div class="card mb-6 shadow-light-lg lift lift-lg">
 
               <!-- Image -->
-              <a class="card-img-top" href="#!">
+              <a class="card-img-top" href="@@webRoot/blog-post.html">
 
                 <!-- Image -->
                 <img src="assets/img/photos/photo-7.jpg" alt="..." class="card-img-top">
@@ -236,7 +211,7 @@
               </a>
 
               <!-- Body -->
-              <a class="card-body" href="#!">
+              <a class="card-body" href="@@webRoot/blog-post.html">
 
                 <!-- Heading -->
                 <h3>
@@ -282,7 +257,7 @@
             <div class="card mb-6 mb-lg-0 shadow-light-lg lift lift-lg">
 
               <!-- Image -->
-              <a class="card-img-top" href="#!">
+              <a class="card-img-top" href="@@webRoot/blog-post.html">
 
                 <!-- Image -->
                 <img src="assets/img/photos/photo-6.jpg" alt="..." class="card-img-top">
@@ -297,7 +272,7 @@
               </a>
 
               <!-- Body -->
-              <a class="card-body" href="#!">
+              <a class="card-body" href="@@webRoot/blog-post.html">
 
                 <!-- Heading -->
                 <h3>
@@ -343,7 +318,7 @@
             <div class="card mb-6 mb-md-0 shadow-light-lg lift lift-lg">
 
               <!-- Image -->
-              <a class="card-img-top" href="#!">
+              <a class="card-img-top" href="@@webRoot/blog-post.html">
 
                 <!-- Image -->
                 <img src="assets/img/photos/photo-4.jpg" alt="..." class="card-img-top">
@@ -358,7 +333,7 @@
               </a>
 
               <!-- Body -->
-              <a class="card-body" href="#!">
+              <a class="card-body" href="@@webRoot/blog-post.html">
 
                 <!-- Heading -->
                 <h3>
@@ -404,7 +379,7 @@
             <div class="card shadow-light-lg lift lift-lg">
 
               <!-- Image -->
-              <a class="card-img-top" href="#!">
+              <a class="card-img-top" href="@@webRoot/blog-post.html">
 
                 <!-- Image -->
                 <img src="assets/img/photos/photo-5.jpg" alt="..." class="card-img-top">
@@ -419,7 +394,7 @@
               </a>
 
               <!-- Body -->
-              <a class="card-body" href="#!">
+              <a class="card-body" href="@@webRoot/blog-post.html">
 
                 <!-- Heading -->
                 <h3>
@@ -536,12 +511,13 @@
     <!-- FOOTER
     ================================================== -->
     @@include("partials/footer.html", {
-      "classList": "bg-gray-200"
+      "classList": "bg-dark  border-gray-800-50"
     })
+
 
     <!-- JAVASCRIPT
     ================================================== -->
     @@include("partials/scripts.html")
-      
+
   </body>
 </html>
